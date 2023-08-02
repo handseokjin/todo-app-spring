@@ -1,0 +1,58 @@
+header {
+    margin-bottom: 50px;
+}
+
+header > h1 {
+    font-size: 60px;
+}
+
+#add {
+    background-color: #868E96;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+#add > a {
+    color: white;
+    font-weight: 700;
+}
+
+nav {
+    position: relative;
+    margin-bottom: 120px;
+}
+
+nav > div {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+
+nav > div > a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+nav > div > a:hover {
+    color: red;
+}
+
+main > div {
+    border-radius: 50px;
+    border: 1px solid lightgray;
+    margin-bottom: 30px;
+    padding: 25px;
+    text-align: left;
+    box-shadow: 2px 2px 2px 2px lightgray;
+}
+
+main > div:hover {
+
+}
+
+main > div > p {
+    font-size: 25px;
+    color: gray;
+    font-weight: bold;
+}

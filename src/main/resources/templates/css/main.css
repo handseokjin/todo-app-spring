@@ -1,0 +1,40 @@
+header {
+    margin-bottom: 50px;
+}
+
+#title {
+    font-size: 60px;
+}
+
+nav {
+    position: relative;
+    margin-bottom: 120px;
+}
+
+#add {
+    background-color: lightgray;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#add:hover {
+    background-color: gray;
+}
+
+.todo {
+    border-radius: 50px;
+    border: 1px solid red;
+    margin-bottom: 30px;
+    padding: 25px;
+    text-align: left;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    font-size: 25px;
+    color: gray;
+    font-weight: bold;
+}

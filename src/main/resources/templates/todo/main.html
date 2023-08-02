@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" th:href="@{../css/general.css}"/>
+    <link rel="stylesheet" th:href="@{../css/main.css}"/>
+</head>
+<body>
+<div id="container">
+    <header>
+        <h1 id="title">Todo List</h1>
+    </header>
+    <nav>
+        <form method="get">
+            <a id="add" href="" th:href="@{/todo/add}">할 일 등록</a>
+        </form>
+    </nav>
+    <main>
+        <p class="todo"
+           th:each="todoItem : ${todoItems}"
+           th:text="${todoItem.title}"
+           th:onclick="|location.href='@{/todo/{todoId}(todoId=${todoItem.id})}'|">
+            새로운 프로젝트 만들어서 해결하기
+        </p>
+    </main>
+</div>
+</body>
+<script src="../js/main.js"></script>
+</html>

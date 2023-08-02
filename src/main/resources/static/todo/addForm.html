@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/addForm.css">
+    <title>할 일 등록</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>등록하기</h1>
+        </header>
+
+        <form action="main.html" th:action method="post">
+
+        </form>
+        <main>
+            <div id="title">
+                <input id="input_title"
+                type="text" placeholder="제목을 입력해 주세요.">
+            </div>
+            <div id="contents">
+                <textarea name="" id="input_contents" cols="30" rows="10" placeholder="내용을 입력해 주세요."></textarea>
+            </div>
+            <div id="save">
+                <a id="btn_save"
+                   href="../html/main.html"
+                   th:href="@{/add}">저장</a>
+            </div>
+        </main>
+<!--        <div>-->
+<!--            <div id="save">-->
+<!--                <a id="btn_save" href="../html/main.html">저장</a>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+</body>
+<script src="../js/add.js"></script>
+</html>
