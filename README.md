@@ -5,12 +5,12 @@
 
 
 ## 2. 화면 구성
-<img width="651" alt="기술스택 구조2" src="https://github.com/handseokjin/todo-app-spring/assets/32458465/917d9dd9-65af-47db-a5c8-be2da7932d1e">
+<img width="703" alt="기술스택 구조2" src="https://github.com/handseokjin/todo-app-spring/assets/32458465/9e32a738-f12a-459d-aee4-0b46c160dcbf">
 
 
 ## 3. 기술적 경험
  - 템플릿 엔진인 `타임리프` 문법 전반의 경험(문서 보면서 찾아서 구현할 수 있는 정도)
- - UI와 비즈니스 로직 영역의 적절한 구분을 위해 `스프링 mvc` 기반으로 구현
+ - UI와 비즈니스 로직 영역의 적절한 구분을 위해 `스프링 MVC` 기반으로 구현
  - 코드 내 간결성 및 가독성을 위해 `Bean 검증`을 통한 검증 실시
  - DB 데이터 관리를 위해 Spring Boot 내 `MyBatis`를 통해 `MySQL DB 연동`
 
@@ -26,4 +26,4 @@
 
 
 ## 6. 회고
- 강의를 통해 spring을 배울 때는 사실 잘 이해가 안 되었습니다. 하지만 간단하지만 이러한 CRUD를 구현할 수 있는 todo 앱을 만들어 보면서 전반적 문법 및 흐름에 좀 더 익숙해질 수 있었습니다.
+ 강의를 통해 Spring을 배울 때는 사실 잘 이해가 안 되었습니다. 하지만 간단하지만 이러한 CRUD를 구현할 수 있는 todo 앱을 만들어 보면서 전반적 문법 및 흐름에 좀 더 익숙해질 수 있었습니다.
