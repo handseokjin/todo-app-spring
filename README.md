@@ -5,6 +5,7 @@
 
 
 ## 2. 화면 구성
+<img width="651" alt="기술스택 구조2" src="https://github.com/handseokjin/todo-app-spring/assets/32458465/917d9dd9-65af-47db-a5c8-be2da7932d1e">
 
 
 ## 3. 기술적 경험
@@ -21,6 +22,7 @@
 
 
 ## 5. 인프라 구조
+<img width="732" alt="화면 구조 2" src="https://github.com/handseokjin/todo-app-spring/assets/32458465/36a652f3-f0fd-48f1-b1f3-d88093ffe78b">
 
 
 ## 6. 회고
