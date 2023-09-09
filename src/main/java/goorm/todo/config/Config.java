@@ -5,11 +5,14 @@ import goorm.todo.repository.mybatis.TodoMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 
+import javax.persistence.EntityManager;
+
 @Configuration
 @RequiredArgsConstructor
-public class MyBatisConfig {
+public class Config {
 
     private final TodoMapper itemMapper;
+    private final EntityManager em;
 
 //    @Bean
 //    public ItemService itemService() {
