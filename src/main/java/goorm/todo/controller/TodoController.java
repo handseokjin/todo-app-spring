@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 
 @Slf4j
 @Controller
@@ -76,9 +77,15 @@ public class TodoController {
             return "redirect:/todo/{todoId}";
         }
 
-        todoService.update(todoId, todoItemDto);
-        redirectAttributes.addAttribute("todoId", todoId);
+        try {
+            log.info("정상적으로 수정 되었습니다.");
+            todoService.update(todoId, todoItemDto);
+            redirectAttributes.addAttribute("todoId", todoId);
 
-        return "redirect:/todo/{todoId}";
+            return "redirect:/todo/{todoId}";
+        } catch (NoSuchElementException exception) {
+            log.error("해당 할 일이 존재하지 않습니다.");
+            return "redirect:/todo";
+        }
     }
 }

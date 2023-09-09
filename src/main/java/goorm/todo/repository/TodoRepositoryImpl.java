@@ -14,9 +14,8 @@ import java.util.List;
 import java.util.Optional;
 
 @Slf4j
-@Repository
+//@Repository
 @RequiredArgsConstructor
-@Transactional
 public class TodoRepositoryImpl implements TodoRepository {
     private final TodoMapper todoMapper;
     private final EntityManager em;
@@ -24,16 +23,16 @@ public class TodoRepositoryImpl implements TodoRepository {
     @Override
     public Optional<TodoItem> findById(int id) { // jpa 적용
         //return todoMapper.findById(id);
-        TodoItem todoItem = em.find(TodoItem.class, id);
 
+        TodoItem todoItem = em.find(TodoItem.class, id);
         return Optional.ofNullable(todoItem);
     }
 
     @Override
-    public List<TodoItem> findAll() {  // jpa 적용
+    public List<TodoItem> findAll() { // jpa 적용
         //return todoMapper.findAll();
-        String jpql = "select i from TodoItem i";
 
+        String jpql = "select i from TodoItem i";
         TypedQuery<TodoItem> query = em.createQuery(jpql, TodoItem.class);
         return query.getResultList();
     }
@@ -41,8 +40,8 @@ public class TodoRepositoryImpl implements TodoRepository {
     @Override
     public TodoItem save(TodoItem item) { // jpa 적용
         //todoMapper.save(item);
-        em.persist(item);
 
+        em.persist(item);
         return item;
     }
 
