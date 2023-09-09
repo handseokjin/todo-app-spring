@@ -11,8 +11,8 @@ import javax.persistence.EntityManager;
 @RequiredArgsConstructor
 public class Config {
 
-    private final TodoMapper itemMapper;
-    private final EntityManager em;
+    private final TodoMapper itemMapper; // MyBatis 적용
+    private final EntityManager em; // jpa 적용
 
 //    @Bean
 //    public ItemService itemService() {
